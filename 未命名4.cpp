@@ -1,28 +1,20 @@
 #include<stdio.h>
 int main()
 {
-	int  grade;
-	printf("«Î ‰»Î≥…º®£®0~100£©£∫");
-	scanf("%d",&grade);
-	grade=grade/10;
-	 
-	switch(grade){
-	case 10:
-	case 9:
-	printf("A\n");
-	break;
-	case 8:
-	printf("B\n");
-	break;
-	case 7:
-	printf("C\n");
-	break;
-	case 6:
-	printf("D\n");
-	break;
-	default:
-	printf("E\n");
-	break;
+	int i;
+	int sum = 0;
+	while(1)
+	{
+		scanf("%d",&i);
+		if(i<=0){
+			break;
+		}
+		if(i%2 !=0 ){
+			sum+=i;
+		}
+		
+		
 	}
-	return 0;
+	printf("%d\n",sum);
+	
 }
